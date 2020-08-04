@@ -5,6 +5,7 @@ import studyIcon from '../../assets/images/icons/study.svg'
 import giveClassesIcon from '../../assets/images/icons/give-classes.svg'
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg'
 import  './styles.css'
+import {Link} from 'react-router-dom'
 function Landing() {
   return (
       <div id="page-landing">
@@ -15,14 +16,14 @@ function Landing() {
               </div>
               <img src={landingImg}  className="hero-image"/>
               <div className="buttons-container">
-                  <a href="" className="study" >
+                  <Link to="/study" className="study" >
                       <img src={studyIcon} />
                       Estudar
-                  </a>
-                  <a href="" className="give-classes" >
+                  </Link>
+                  <Link to="/give-classes" className="give-classes" >
                       <img src={giveClassesIcon} />
                       Dar aulas
-                  </a>
+                  </Link>
                  
 
               </div>
